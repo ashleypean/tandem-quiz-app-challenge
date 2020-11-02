@@ -1,6 +1,6 @@
 import '../styles/Home.css'
 import React from 'react'
-import Nav from './Navbar'
+import Nav from './Nav'
 
 export default function Home() {
 

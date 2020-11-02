@@ -1,9 +1,9 @@
 import '../styles/App.css';
-import Home from './Home.js'
-import Instructions from './Instructions.js'
-import NotFound from './404NotFound.js'
-import Quiz from './Quiz.js'
-import FinalScore from './FinalScore.js'
+import Home from './Home'
+import Instructions from './Instructions'
+import NotFound from './404NotFound'
+import Quiz from './Quiz'
+import FinalScore from './FinalScore'
 import { BrowserRouter as Router, Switch , Route, Redirect } from 'react-router-dom'
 import { useState } from 'react'
 
