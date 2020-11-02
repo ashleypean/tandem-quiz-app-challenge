@@ -5,11 +5,11 @@ import FinalScore from './FinalScore'
 import React, { useState, Component } from 'react'
 
 export default function Quiz(props) {
-  const [currentQuestion, setCurrentQuestion] = useState({
-    "question": null,
-    "incorrect": [],
-    "correct": null
-  })
+  // const [currentQuestion, setCurrentQuestion] = useState({
+  //   "question": null,
+  //   "incorrect": [],
+  //   "correct": null
+  // })
   return (
     <div className="quiz">
       <nav>
