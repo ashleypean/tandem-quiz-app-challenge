@@ -1,4 +1,4 @@
-import '../styles/Instructions.css'
+import '../styles/instructions.css'
 import React from 'react'
 import Nav from './Navbar'
 import AKey from '../img/a-key.png'
