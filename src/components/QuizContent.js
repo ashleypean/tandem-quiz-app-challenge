@@ -42,6 +42,16 @@ export default function QuizContent(props) {
     console.log(i, correctIndex, questionList[i])
 
     setCorrectAnswer(alpha[correctIndex])
+  }, [props.questionNumber, questionList])
+
+  //Remove question highlight when new question pops up
+  //Remove userSelection when new question pops us
+  useEffect(() => {
+    setUserSelection()
+
+    if(document.querySelector(`div .selected-style`)) {
+      document.querySelector(`div .selected-style`).classList.remove('selected-style')
+    }
   }, [props.questionNumber])
 
   //PROPS

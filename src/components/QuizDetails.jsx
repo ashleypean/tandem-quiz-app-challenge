@@ -23,7 +23,7 @@ export default function QuizDetails() {
     } else {
         //Validate user's answer choice, and increment score if answer is correct  
         console.log(userSelection, correctAnswer)
-        userSelection == correctAnswer ? setScore(prev => prev + 1): setScore(prev => prev)
+        userSelection === correctAnswer ? setScore(prev => prev + 1): setScore(prev => prev)
         setQuestionNumber(prev => prev + 1)
     }
         
@@ -44,7 +44,7 @@ export default function QuizDetails() {
       <QuizContent questionNumber={questionNumber} setUserSelection={setUserSelection} setCorrectAnswer={setCorrectAnswer}/>
 
       <div className="button">
-        <button className="next-question" onClick={handleClick}>Next &gt;</button>
+        <button className="next-question" onClick={handleClick}>Next</button>
       </div>
       
       
