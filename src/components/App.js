@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import '../styles/App.css';
+import Home from './Home.js'
+import Instructions from './Instructions.js'
+import NotFound from './404NotFound.js'
+import Quiz from './Quiz.js'
+import FinalScore from './FinalScore.js'
+import { BrowserRouter as Router, Switch , Route, Redirect } from 'react-router-dom'
+import { useState } from 'react'
 
-function App() {
+export default function App() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [questionNumber, setQuestionNumber] = useState(1)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <Router >
+        <Switch>
+          <Route  exact path="/" render={Home} />
+          <Redirect from="/home" to="/"/>
+          <Route  exact path="/instructions" render={Instructions} />
+          <Route exact path="/score" render={FinalScore} />
+          <Route exact path="/take" render={Quiz}
+          isOpen={isOpen} setIsOpen={setIsOpen}
+          questionNumber={questionNumber}
+          setQuestionNumber={setQuestionNumber}
+          />
+          <Route path="*" render={NotFound}/>
+        </Switch>  
+      </Router>
 
-export default App;
+    </div>
+  )
+}
