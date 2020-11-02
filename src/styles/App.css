@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;700;800&display=swap');
-html, body, div.App  {
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 div.App {
+  height: 95%;
+  width: 95%;
   background-color: #090979;
   font-family: 'Turret Road', cursive;
   padding: 5%;
