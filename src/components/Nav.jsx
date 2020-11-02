@@ -13,7 +13,7 @@ export default function Nav() {
         Instructions
       </NavLink>
 
-      <NavLink to="/take" activeClassName="selected-nav-item" >
+      <NavLink to="/quiz" activeClassName="selected-nav-item" >
         Take a Quiz
       </NavLink>
     </nav>

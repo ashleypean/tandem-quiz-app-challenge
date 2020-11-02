@@ -13,17 +13,18 @@ export default function App() {
 
   return (
     <div className="App">
-      <Router >
+      <Router>
         <Switch>
           <Route  exact path="/" render={Home} />
           <Redirect from="/home" to="/"/>
           <Route  exact path="/instructions" render={Instructions} />
           <Route exact path="/score" render={FinalScore} />
-          <Route exact path="/take" render={Quiz}
+          <Route exact path="/quiz" render={Quiz}
           isOpen={isOpen} setIsOpen={setIsOpen}
           questionNumber={questionNumber}
           setQuestionNumber={setQuestionNumber}
           />
+          <Route path="/quiz/score" render={FinalScore} />
           <Route path="*" render={NotFound}/>
         </Switch>  
       </Router>

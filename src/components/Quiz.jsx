@@ -1,20 +1,22 @@
 import '../styles/quiz.css'
 //import QuizContent from './QuizContent'
 // import Modal from './Modal'
-import FinalScore from './FinalScore'
-import React, { useState, Component } from 'react'
+import React from 'react'
+import e from 'express'
 
 export default function Quiz(props) {
-  // const [currentQuestion, setCurrentQuestion] = useState({
-  //   "question": null,
-  //   "incorrect": [],
-  //   "correct": null
-  // })
+
+  const handleExit = (e) => {
+    
+
+    
+  }
+
   return (
     <div className="quiz">
       <nav>
       <p className="link modal">Instructions</p>
-      <p className="exit-button link">Exit Quiz</p>
+      <p className="exit-button link" onClick={handleExit}>Exit Quiz</p>
       </nav>
 
       <div className="score">
