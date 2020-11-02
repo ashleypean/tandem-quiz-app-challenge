@@ -1,6 +1,6 @@
-import '../styles/instructions.css'
+import '../styles/Instructions.css'
 import React from 'react'
-import Nav from './Nav'
+import Nav from './Navbar'
 import AKey from '../img/a-key.png'
 import BKey from '../img/b-key.png'
 import CKey from '../img/c-key.png'

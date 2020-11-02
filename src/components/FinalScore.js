@@ -1,4 +1,4 @@
-import '../styles/final-score.css'
+import '../styles/FinalScore.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 

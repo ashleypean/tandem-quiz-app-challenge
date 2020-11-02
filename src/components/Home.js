@@ -1,6 +1,6 @@
 import '../styles/Home.css'
 import React from 'react'
-import Nav from './Nav'
+import Nav from './Navbar'
 
 export default function Home() {
 
@@ -11,3 +11,4 @@ export default function Home() {
     </div>
   )
 }
+
