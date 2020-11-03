@@ -10,6 +10,9 @@ div.App {
   font-family: 'Turret Road', cursive;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Set uniform color for all text in div.app*/
